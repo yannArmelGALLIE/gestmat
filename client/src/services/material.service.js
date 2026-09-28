@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = 'https://gestmat-production-b620.up.railway.app/api'
 
 export const getMaterials = async (token) => {
   const response = await fetch(`${API_BASE}/materials`, {

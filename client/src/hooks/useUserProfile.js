@@ -18,7 +18,7 @@ export const useUserProfile = () => {
         nom: clerkUser?.lastName || '',
         prenom: clerkUser?.firstName || ''
       }
-      const res = await fetch('http://localhost:5000/api/users/sync', {
+      const res = await fetch('https://gestmat-production-b620.up.railway.app/api/users/sync', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify(body)

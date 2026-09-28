@@ -12,7 +12,7 @@ export const useSyncUser = () => {
           const token = await getToken()
           if (!token) return
 
-          const response = await fetch('http://localhost:5000/api/users/sync', {
+          const response = await fetch('https://gestmat-production-b620.up.railway.app/api/users/sync', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
