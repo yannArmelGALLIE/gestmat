@@ -91,8 +91,12 @@ DATABASE_URL="postgresql://user:password@ep-cool-db.neon.tech/gestmat?sslmode=re
 CLERK_SECRET_KEY="sk_test_..."
 CLERK_PUBLISHABLE_KEY="pk_test_..."
 RESEND_API_KEY="re_..."
+RESEND_FROM_EMAIL="GestMat <notifications@votre-domaine-verifie.com>"
+ADMIN_EMAILS="professional.gallie@gmail.com,koffi1gallie@gmail.com"
 FRONTEND_URL="https://gestmat.vercel.app"
 ```
+
+`RESEND_FROM_EMAIL` doit utiliser une adresse d'un domaine vérifié dans Resend. Les admins synchronisés dans la base avec le rôle `ADMIN` reçoivent les notifications ; `ADMIN_EMAILS` sert de liste de secours.
 
 **Frontend (`client/.env`)**
 ```env
